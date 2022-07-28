@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Collection</title>
+    <style>
+
+        @font-face {
+            font-family: Futura PT;
+            src: url('fonts/futura_pt_medium.ttf');
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            font-family: Futura PT;
+        }
+
+        .header{
+            display: flex;
+        }
+
+        .header_logo {
+            margin: 30px 0 60px 60px;
+            padding-right: 387px;
+        }
+
+        .search {
+            position: relative;
+            margin-top: 29px;
+            width: 216px;
+            height: 30px;
+            border: 1px solid #000;
+        }
+
+         input[type="search"] {
+            border: none;
+            outline: none;
+            vertical-align: middle;
+        }
+         input[type="submit"] {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            border: none;
+            background: url(img/search.svg) no-repeat;
+            padding: 10px;
+
+        }
+
+        .shopping_cart {
+            margin-top: 29px;
+            margin-right: 60px;
+            padding-left: 32px;
+        }
+
+        .main {
+            display: flex;
+            width: 1000px;
+       }
+
+       .main_content_left {
+            display: flex;
+       }
+
+       .main_content_right {
+            display: flex;
+            flex-direction: column;
+       }
+
+       .h1 {
+            display: flex;
+            margin: 0;
+            padding-top: 58px;
+            padding-left: 96px;
+            width: 308px;
+            font-size: 50px;
+       }
+
+       .line_h1 {
+            width: 308px;
+            border: 3px solid #F0B9CB;
+       }
+
+       .main_img_right {
+            display: flex;
+       }
+
+       .p{
+            display: flex;
+       }
+
+       .footer {
+            display: flex;
+       }
+
+       .footer_stroke {
+            margin-top: 100px;
+            size: 1px #CECECE;
+            color: #CECECE;
+       }
+
+       .footer_list {
+            display: flex;
+            margin: 0;
+            padding: 72px 0 23px 0;
+            list-style: none;
+            gap: 36px;
+            justify-content: center;
+       }
+
+       .footer_button {
+            display: flex;
+            padding-bottom: 24px;
+            justify-content: center
+       }
+
+       .social_icons {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            gap: 33px;
+            list-style: none;
+
+       }
+
+       .footer_copywrite {
+            display: flex;
+            margin: 0;
+            margin-bottom: 32px;
+            padding-top: 85px;
+            justify-content: center
+       }
+
+    </style>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="header_logo" src="./img/header_logo.svg">
+        <form>
+            <div class="search">
+             <input type="search">
+             <input type="submit" value="">
+           </div>
+          </form>
+        <a class="shopping_cart" href="#"><img src="./img/shopping_cart.svg"></a>
+    </header>
+
+    <main class="main">
+        <main class="main_content_left">
+           <img class="main_img_left" src="./img/img_1.jpg" width="100%" height="100%">
+        </main>
+        <main class="main_content_right">
+           <h1>New Collection</h1>
+           <hr class="line_h1">
+           <img class="main_img_right" src="./img/img_2.png" width="100%" height="100%">
+           <p>Современность, эстетика и экспертное мастерство
+           <br>из тонкой натуральной органической овечьей шерсти</br></p>
+         </main>
+    </main>
+
+    <footer>
+        <hr class="footer_stroke">
+        <footer class="footer__menu">
+            <ul class="footer_list">
+                <li>Контакты</li>
+                <li>FAQ</li>
+                <li>Условия</li>
+            </ul>
+        <a class="footer_button" href="#"><img src="./img/button_subscription.svg"></a>
+        <ul class="social_icons">
+            <li><a href="https://www.instagram.com"><img src="./img/icon_instagram.svg"></a></li>
+            <li><a href="https://www.tiktok.com"><img src="./img/icon_tiktok.svg"></a></li>
+            <li><a href="https://www.pinterest.com"><img src="./img/icon_pinterest.svg"></a></li>
+            <li><a href="https://www.vk.com"><img src="./img/icon_vk.svg"></a></li>
+        </ul>
+        <p class="footer_copywrite">Все права защищены, 2022</p>
+    </footer>
+
+</body>
+</html>
